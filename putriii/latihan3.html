@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar canvas html5</title>
+    <style>
+        canvas {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="kertas_gambar" width="500" height="300">
+    </canvas>
+    <script>
+        let canvasku =
+            documet.getelementbyid("kertas_gamabar");
+        let context = canvasku.getcontext("2d");
+
+        context.linewidht = 20;
+        context.strokestyle = "black";
+
+        context.rect(50, 350, 150);
+        context.stroke();
+
+        context.fillstyle = "yellow";
+        context.fill();
+    </script>
+</body>
+
+</html>
